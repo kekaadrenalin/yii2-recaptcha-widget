@@ -57,8 +57,8 @@ or use DI container:
                 $config
             );
         },
-        himiklab\yii2\recaptcha\ReCaptchaValidator2::className() => function ($container, $params, $config) {
-            return new himiklab\yii2\recaptcha\ReCaptchaValidator2(
+        kekaadrenalin\yii2\recaptcha\ReCaptchaValidator2::className() => function ($container, $params, $config) {
+            return new kekaadrenalin\yii2\recaptcha\ReCaptchaValidator2(
                 'your secret key v2',
                 '', // default
                 null, // default
@@ -142,7 +142,7 @@ v2
 
 v3
 ```php
-<?= \himiklab\yii2\recaptcha\ReCaptcha3::widget([
+<?= \kekaadrenalin\yii2\recaptcha\ReCaptcha3::widget([
     'name' => 'reCaptcha',
     'siteKey' => 'your siteKey', // unnecessary is reCaptcha component was set up
     'action' => 'homepage',
